@@ -191,14 +191,31 @@
                 border: 1px solid var(--green); 
             }
 
-            .box-container {
+            fieldset {
+                border: 1px solid #000;
+                border-radius: 10px;
                 padding: 10px;
                 margin: 20px 0px;
-                border-radius: 10px;
             }
 
-            .box-container p {
-                margin: 0px !important;
+            fieldset.info legend {
+                color: var(--blue);
+            }
+
+            fieldset.warning legend {
+                color: var(--yellow);
+            }
+
+            fieldset.danger legend {
+                color: var(--red);
+            }
+
+            fieldset.success legend {
+                color: var(--green);
+            }
+
+            fieldset p {
+                margin: 0px 0px !important;
             }
 
             /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -250,9 +267,12 @@
                         <h2>03/09/2022 - <a href="#" target="_blank"><i class="fas fa-unlink"></i> website_generator</a></h2>
                     </div>
                     <p>Created <a href="#" target="_blank"><i class="fas fa-unlink"></i> website_generator</a></p>
-                    <div class="box-container info">
+                    
+                    <fieldset class="info">
+                        <legend>Info</legend>
                         <p>More infos soon.</p>
-                    </div>
+                    </fieldset>
+
                 </div>
             </div>
 
